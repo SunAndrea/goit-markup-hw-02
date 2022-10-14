@@ -6,6 +6,7 @@
   --logo-white-color: #ffffff;
   --title-text-color: #212121;
   --white-text-color: #ffffff;
+  --blue-text-color: #2196f3;
 
   /*------HVER-COLOR-----*/
   --hover-blue-color: #2196f3;
@@ -63,7 +64,7 @@ body {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-white-color);
 }
@@ -76,8 +77,27 @@ body {
 
   color: var(--title-text-color);
 }
-.header-link:hover,
-:focus {
+.header-link-blue {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--blue-text-color);
+}
+.header-link-blue:hover {
+  color: var(--hover-blue-color);
+  background-color: #ffffff;
+}
+.header-link-blue:focus {
+  color: var(--hover-blue-color);
+  background-color: #ffffff;
+}
+.header-link:hover {
+  color: var(--hover-blue-color);
+  background-color: #ffffff;
+}
+.header-link:focus {
   color: var(--hover-blue-color);
   background-color: #ffffff;
 }
@@ -96,13 +116,19 @@ body {
 
   color: var(--main-text-color);
 }
-.header-mail:hover,
-:focus {
+.header-mail:hover {
   color: var(--hover-blue-color);
   background-color: #ffffff;
 }
-.header-tel:hover,
-:focus {
+.header-mail:focus {
+  color: var(--hover-blue-color);
+  background-color: #ffffff;
+}
+.header-tel:hover {
+  color: var(--hover-blue-color);
+  background-color: #ffffff;
+}
+.header-tel:focus {
   color: var(--hover-blue-color);
   background-color: #ffffff;
 }
@@ -198,22 +224,27 @@ body {
   background-color: var(--section-bg-color);
 }
 .footer-mail {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--main-text-color);
+  color: rgba(255, 255, 255, 0.6);
 
   letter-spacing: 0.03em;
 }
 .footer-tel {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--main-text-color);
+  /* or 171% */
 
   letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-adress {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -222,21 +253,31 @@ body {
 
   color: var(--white-text-color);
 }
-.footer-mail:hover,
-:focus {
+.footer-mail:hover {
   color: var(--hover-blue-color);
   background-color: var(--section-bg-color);
 }
-.footer-tel:hover,
-:focus {
+.footer-mail:focus {
   color: var(--hover-blue-color);
   background-color: var(--section-bg-color);
 }
-.footer-adress:hover,
-:focus {
+.footer-tel:hover {
   color: var(--hover-blue-color);
   background-color: var(--section-bg-color);
 }
+.footer-tel:focus {
+  color: var(--hover-blue-color);
+  background-color: var(--section-bg-color);
+}
+.footer-adress:hover {
+  color: var(--hover-blue-color);
+  background-color: var(--section-bg-color);
+}
+.footer-adress:focus {
+  color: var(--hover-blue-color);
+  background-color: var(--section-bg-color);
+}
+
 .footer {
   background-color: var(--section-bg-color);
 }
